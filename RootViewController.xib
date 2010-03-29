@@ -38,7 +38,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIButton" id="977105606">
 						<reference key="NSNextResponder" ref="480520941"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{13, 137}, {146, 37}}</string>
 						<reference key="NSSuperview" ref="480520941"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -67,7 +67,7 @@
 					</object>
 					<object class="IBUIButton" id="969540609">
 						<reference key="NSNextResponder" ref="480520941"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{13, 190}, {146, 37}}</string>
 						<reference key="NSSuperview" ref="480520941"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -86,7 +86,7 @@
 					</object>
 					<object class="IBUIButton" id="85077295">
 						<reference key="NSNextResponder" ref="480520941"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{167, 137}, {146, 37}}</string>
 						<reference key="NSSuperview" ref="480520941"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -105,7 +105,7 @@
 					</object>
 					<object class="IBUIButton" id="885855454">
 						<reference key="NSNextResponder" ref="480520941"/>
-						<int key="NSvFlags">292</int>
+						<int key="NSvFlags">293</int>
 						<string key="NSFrame">{{167, 190}, {146, 37}}</string>
 						<reference key="NSSuperview" ref="480520941"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -124,8 +124,8 @@
 					</object>
 					<object class="IBUILabel" id="51887520">
 						<reference key="NSNextResponder" ref="480520941"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{13, 84}, {287, 21}}</string>
+						<int key="NSvFlags">293</int>
+						<string key="NSFrame">{{74, 75}, {171, 21}}</string>
 						<reference key="NSSuperview" ref="480520941"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -138,6 +138,7 @@
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">1.000000e+01</float>
+						<int key="IBUITextAlignment">1</int>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 436}</string>

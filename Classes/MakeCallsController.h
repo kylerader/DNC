@@ -21,10 +21,12 @@
 	NSString *currentElement;
 	NSXMLParser *parser;
 	NSString *candidateSelection;
+	NSString *candidateName;
 }
 
 @property (nonatomic, retain) NSMutableArray *supporters;
 @property (nonatomic, retain) NSString *candidateSelection;
+@property (nonatomic, retain) NSString *candidateName;
 
 
 - (void)xmlParser;

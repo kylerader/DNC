@@ -7,9 +7,12 @@
 //
 
 #import "PlaceCall.h"
+#import "MakeCallsController.h"
 
 
 @implementation PlaceCall
+
+@synthesize supporterID,supporterName,supporterPhone,candidateName;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -27,20 +30,35 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	UIView *mainView = [[[[yesNoSwitch subviews] objectAtIndex:0] subviews] objectAtIndex:2];
+	UILabel *onLabel = [[mainView subviews] objectAtIndex:0];
+	UILabel *offLabel = [[mainView subviews] objectAtIndex:1];
+	onLabel.text = @"Yes";
+	offLabel.text = @"No";
+	[candidateNameLabel setText:[@"Supporter for " stringByAppendingString:self.candidateName]];
+	[script setText:[@"Hi, " stringByAppendingString:[self.supporterName stringByAppendingString:[@".  My name is __.  I'm a volunteer with " stringByAppendingString:[self.candidateName stringByAppendingString:@".  How are you? I'm calling to find out whether you'll be supporting him/her?"]]]]];
+	[callSupporter setTitle:[@"Call " stringByAppendingString:self.supporterName] forState:UIControlStateNormal];
+	//[mainView release];
+	//[onLabel release];
+	//[offLabel release];
 }
-*/
 
-/*
-// Override to allow orientations other than the default portrait orientation.
+
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
 }
-*/
+
+- (IBAction)placeTheCall:(id)sender{
+	
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"tel://" stringByAppendingString:self.supporterPhone]]];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -56,6 +74,14 @@
 
 
 - (void)dealloc {
+	[supporterID release];
+	[supporterPhone release];
+	[supporterName release];
+	[candidateName release];
+	[candidateNameLabel release];
+	[callSupporter release];
+	[script release];
+	[yesNoSwitch release];
     [super dealloc];
 }
 

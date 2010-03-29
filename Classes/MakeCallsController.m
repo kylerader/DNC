@@ -7,12 +7,13 @@
 //
 
 #import "MakeCallsController.h"
+#import "PlaceCall.h"
 
 
 @implementation MakeCallsController
 
 @synthesize supporters;
-@synthesize candidateSelection;
+@synthesize candidateSelection,candidateName;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -49,13 +50,10 @@
 }
 
 
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -70,16 +68,26 @@
 }
 
 
+
+
 - (void)dealloc {
 	[table release];
 	[supporters release];
 	[activityIndicator release];
+	[name release];
+	[phone release];
+	[supporterId release];
+	[candidateId release];
+	[candidateResponse release];
+	[currentElement release];
+	//[parser release];
+	[candidateSelection release];
+	[candidateName release];
     [super dealloc];
 }
 
 -(void)xmlParser{
-	
-	NSURL *url = [NSURL URLWithString:@"http://10.101.3.25/~ThoughtWorks/phoneList.xml"];
+	NSURL *url = [NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/phoneList.xml"];
 	parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
@@ -127,7 +135,6 @@
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
 	
 	if ([elementName isEqualToString:@"user"]) {
-		NSLog(candidateResponse);
 		if([candidateResponse isEqualToString: @"NotYet"]){
 			[[supporters objectAtIndex:0] addObject:name];
 			[[supporters objectAtIndex:1] addObject:supporterId];
@@ -159,8 +166,12 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 	
-	MakeCallsController *newPage = [[MakeCallsController alloc] initWithNibName:@"PlaceCall" bundle:nil];
+	PlaceCall *newPage = [[PlaceCall alloc] initWithNibName:@"PlaceCall" bundle:nil];
 	newPage.title=@"Place Call";
+	newPage.supporterName=[[supporters objectAtIndex:0] objectAtIndex:indexPath.row];
+	newPage.supporterID=[[supporters objectAtIndex:1] objectAtIndex:indexPath.row];
+	newPage.supporterPhone=[[supporters objectAtIndex:2] objectAtIndex:indexPath.row];
+	newPage.candidateName=self.candidateName;
 	[super.navigationController pushViewController:newPage animated:YES];
 	[newPage release];
 }

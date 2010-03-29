@@ -12,14 +12,14 @@
 
 @implementation RootViewController
 
-/*
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad]; 
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-*/
+
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
@@ -42,13 +42,11 @@
 }
 */
 
-/*
- // Override to allow orientations other than the default portrait orientation.
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
 }
- */
+
 
 - (IBAction)findCandidate:(id)sender{
 

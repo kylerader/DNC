@@ -49,13 +49,9 @@
 }
 
 
-/*
-// Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+	return YES;
 }
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -69,18 +65,24 @@
 	// e.g. self.myOutlet = nil;
 }
 
-
 - (void)dealloc {
 	[locationController release];
 	[table release];
-	[candidates release];
 	[activityIndicator release];
+	[candidates release];
+	[name release];
+	[candidateId release];
+	[latitude release];
+	[longitude release];
+	[currentLatitude release];
+	[currentLongitude release];
+	[currentElement release];
+	//[parser release];
     [super dealloc];
 }
 
 -(void)xmlParser{
-	
-	NSURL *url = [NSURL URLWithString:@"http://10.101.3.25/~ThoughtWorks/candidates.xml"];
+	NSURL *url = [NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/candidates.xml"];
 	parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
@@ -172,6 +174,7 @@
 	MakeCallsController *newPage = [[MakeCallsController alloc] initWithNibName:@"MakeCalls" bundle:nil];
 	newPage.title=@"Make Calls";
 	newPage.candidateSelection=[[candidates objectAtIndex:1] objectAtIndex:indexPath.row];
+	newPage.candidateName=[[candidates objectAtIndex:0] objectAtIndex:indexPath.row];
 	[super.navigationController pushViewController:newPage animated:YES];
 	[newPage release];
 }

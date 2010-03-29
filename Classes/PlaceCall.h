@@ -10,7 +10,22 @@
 
 
 @interface PlaceCall : UIViewController {
+	NSString *supporterID;
+	NSString *supporterPhone;
+	NSString *supporterName;
+	NSString *candidateName;
+	IBOutlet UILabel *candidateNameLabel;
+	IBOutlet UIButton *callSupporter;
+	IBOutlet UILabel *script;
+	IBOutlet UISwitch *yesNoSwitch;
+	
 
 }
+@property (nonatomic, retain) NSString *supporterID;
+@property (nonatomic, retain) NSString *supporterPhone;
+@property (nonatomic, retain) NSString *supporterName;
+@property (nonatomic, retain) NSString *candidateName;
+
+- (IBAction)placeTheCall:(id)sender;
 
 @end
