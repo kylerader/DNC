@@ -19,12 +19,60 @@
 		D6B7E666115A5FFE001D1770 /* findCandidateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B7E665115A5FFE001D1770 /* findCandidateController.xib */; };
 		D6B7E6C3115A6C01001D1770 /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7E6C2115A6C01001D1770 /* CLController.m */; };
 		D6B7E70C115A7071001D1770 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7E70B115A7071001D1770 /* CoreLocation.framework */; };
-		D6F63FA0115AA24F0009E606 /* FindCandidateTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F63F9F115AA24F0009E606 /* FindCandidateTestCase.m */; };
+		D6B9A3ED116251270080B268 /* UISpec_1_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9A3EC116251270080B268 /* UISpec_1_0.a */; };
+		D6B9A3EE116251270080B268 /* UISpec_1_0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B9A3EC116251270080B268 /* UISpec_1_0.a */; };
+		D6B9A3F51162547D0080B268 /* SpecMain.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9A3F41162547D0080B268 /* SpecMain.m */; };
+		D6B9A4481162550C0080B268 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		D6B9A4491162550F0080B268 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		D6B9A488116255120080B268 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		D6B9A4A8116255150080B268 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7E70B115A7071001D1770 /* CoreLocation.framework */; };
+		D6B9A4E6116257630080B268 /* CLController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7E6C2115A6C01001D1770 /* CLController.m */; };
+		D6B9A4E8116257630080B268 /* findCandidateController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7E661115A5FCD001D1770 /* findCandidateController.m */; };
+		D6B9A4EA116257630080B268 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		D6B9A4EC116257630080B268 /* DNCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DNCAppDelegate.m */; };
+		D6B9A4EE116257630080B268 /* MakeCallsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F641EA115C0BAF0009E606 /* MakeCallsController.m */; };
+		D6B9A4F0116257630080B268 /* PlaceCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6435E115D27660009E606 /* PlaceCall.m */; };
+		D6B9A4F1116257830080B268 /* findCandidateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B7E665115A5FFE001D1770 /* findCandidateController.xib */; };
+		D6B9A4F2116257830080B268 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+		D6B9A4F3116257830080B268 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		D6B9A4F5116257830080B268 /* MakeCalls.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F641E6115C0A490009E606 /* MakeCalls.xib */; };
+		D6B9A4F6116257830080B268 /* PlaceCall.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F64355115D230B0009E606 /* PlaceCall.xib */; };
 		D6F641EB115C0BAF0009E606 /* MakeCallsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F641EA115C0BAF0009E606 /* MakeCallsController.m */; };
 		D6F64216115C13B70009E606 /* MakeCalls.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F641E6115C0A490009E606 /* MakeCalls.xib */; };
 		D6F64356115D230B0009E606 /* PlaceCall.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6F64355115D230B0009E606 /* PlaceCall.xib */; };
 		D6F6435F115D27660009E606 /* PlaceCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F6435E115D27660009E606 /* PlaceCall.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B9A4BE116255EB0080B268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C76EB5D20F74586B00EF8398 /* UISpec_Simulator.a */;
+			remoteInfo = UISpec_Simulator;
+		};
+		D6B9A4C0116255EB0080B268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C76EB5DA0F7458C100EF8398 /* UISpec_Device.a */;
+			remoteInfo = UISpec_Device;
+		};
+		D6B9A4C2116255EB0080B268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C7D4F29310BDA39C00B00019 /* Specs.app */;
+			remoteInfo = Specs;
+		};
+		D6B9A4D4116257400080B268 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C76EB5D10F74586B00EF8398 /* UISpec_Simulator */;
+			remoteInfo = UISpec_Simulator;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -46,9 +94,11 @@
 		D6B7E6C1115A6C01001D1770 /* CLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLController.h; sourceTree = "<group>"; };
 		D6B7E6C2115A6C01001D1770 /* CLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLController.m; sourceTree = "<group>"; };
 		D6B7E70B115A7071001D1770 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D6B9A3EC116251270080B268 /* UISpec_1_0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = UISpec_1_0.a; path = ../uispec/bin/UISpec/UISpec_1_0.a; sourceTree = SOURCE_ROOT; };
+		D6B9A3F41162547D0080B268 /* SpecMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecMain.m; sourceTree = "<group>"; };
+		D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UISpec.xcodeproj; path = ../uispec/xcode/UISpec/UISpec.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D6F63EA6115A9E700009E606 /* Unit Testing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unit Testing-Info.plist"; sourceTree = "<group>"; };
 		D6F63F98115AA1690009E606 /* Unit Testing.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Testing.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6F63F9F115AA24F0009E606 /* FindCandidateTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindCandidateTestCase.m; sourceTree = "<group>"; };
 		D6F641E6115C0A490009E606 /* MakeCalls.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeCalls.xib; sourceTree = "<group>"; };
 		D6F641E9115C0BAF0009E606 /* MakeCallsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeCallsController.h; sourceTree = "<group>"; };
 		D6F641EA115C0BAF0009E606 /* MakeCallsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeCallsController.m; sourceTree = "<group>"; };
@@ -66,6 +116,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				D6B7E70C115A7071001D1770 /* CoreLocation.framework in Frameworks */,
+				D6B9A3ED116251270080B268 /* UISpec_1_0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +124,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B9A4A8116255150080B268 /* CoreLocation.framework in Frameworks */,
+				D6B9A488116255120080B268 /* CoreGraphics.framework in Frameworks */,
+				D6B9A4491162550F0080B268 /* UIKit.framework in Frameworks */,
+				D6B9A4481162550C0080B268 /* Foundation.framework in Frameworks */,
+				D6B9A3EE116251270080B268 /* UISpec_1_0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,13 +166,14 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				D6F63EA6115A9E700009E606 /* Unit Testing-Info.plist */,
-				D6F63F9F115AA24F0009E606 /* FindCandidateTestCase.m */,
+				D6B9A3F41162547D0080B268 /* SpecMain.m */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -146,12 +203,23 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6B9A3EC116251270080B268 /* UISpec_1_0.a */,
 				D6B7E70B115A7071001D1770 /* CoreLocation.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B9A4B4116255EB0080B268 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B9A4BF116255EB0080B268 /* UISpec_Simulator.a */,
+				D6B9A4C1116255EB0080B268 /* UISpec_Device.a */,
+				D6B9A4C3116255EB0080B268 /* Specs.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +254,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D6B9A4D5116257400080B268 /* PBXTargetDependency */,
 			);
 			name = "Unit Testing";
 			productName = "Unit Testing";
@@ -209,6 +278,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D6B9A4B4116255EB0080B268 /* Products */;
+					ProjectRef = D6B9A4B3116255EB0080B268 /* UISpec.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* DNC */,
@@ -216,6 +291,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D6B9A4BF116255EB0080B268 /* UISpec_Simulator.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = UISpec_Simulator.a;
+			remoteRef = D6B9A4BE116255EB0080B268 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6B9A4C1116255EB0080B268 /* UISpec_Device.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = UISpec_Device.a;
+			remoteRef = D6B9A4C0116255EB0080B268 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D6B9A4C3116255EB0080B268 /* Specs.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Specs.app;
+			remoteRef = D6B9A4C2116255EB0080B268 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -234,6 +333,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6B9A4F1116257830080B268 /* findCandidateController.xib in Resources */,
+				D6B9A4F2116257830080B268 /* RootViewController.xib in Resources */,
+				D6B9A4F3116257830080B268 /* MainWindow.xib in Resources */,
+				D6B9A4F5116257830080B268 /* MakeCalls.xib in Resources */,
+				D6B9A4F6116257830080B268 /* PlaceCall.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,11 +378,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6F63FA0115AA24F0009E606 /* FindCandidateTestCase.m in Sources */,
+				D6B9A4E6116257630080B268 /* CLController.m in Sources */,
+				D6B9A4E8116257630080B268 /* findCandidateController.m in Sources */,
+				D6B9A4EA116257630080B268 /* RootViewController.m in Sources */,
+				D6B9A4EC116257630080B268 /* DNCAppDelegate.m in Sources */,
+				D6B9A4EE116257630080B268 /* MakeCallsController.m in Sources */,
+				D6B9A4F0116257630080B268 /* PlaceCall.m in Sources */,
+				D6B9A3F51162547D0080B268 /* SpecMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B9A4D5116257400080B268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UISpec_Simulator;
+			targetProxy = D6B9A4D4116257400080B268 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
@@ -290,7 +408,12 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DNC_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"/Users/ThoughtWorks/Documents/uispec/bin/UISpec/Headers\"";
 				INFOPLIST_FILE = "DNC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../uispec/bin/UISpec\"",
+				);
 				PRODUCT_NAME = DNC;
 			};
 			name = Debug;
@@ -303,6 +426,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = DNC_Prefix.pch;
 				INFOPLIST_FILE = "DNC-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../uispec/bin/UISpec\"",
+				);
 				PRODUCT_NAME = DNC;
 			};
 			name = Release;
@@ -346,17 +473,17 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = "\"/Users/ThoughtWorks/Documents/uispec/bin/UISpec/Headers\"";
 				INFOPLIST_FILE = "Unit Testing-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					SenTestingKit,
-					"-framework",
-					UIKit,
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../uispec/bin/UISpec\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = "Unit Testing";
+				SDKROOT = iphonesimulator3.0;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -374,6 +501,10 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				INFOPLIST_FILE = "Unit Testing-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../uispec/bin/UISpec\"",
+				);
 				OTHER_LDFLAGS = (
 					"-framework",
 					Foundation,

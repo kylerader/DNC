@@ -22,7 +22,6 @@
 	NSMutableString *currentLatitude;
 	NSMutableString *currentLongitude;
 	NSString *currentElement;
-	NSXMLParser *parser;
 }
 
 @property (nonatomic, retain) NSMutableString *currentLatitude;

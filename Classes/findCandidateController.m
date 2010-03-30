@@ -77,13 +77,11 @@
 	[currentLatitude release];
 	[currentLongitude release];
 	[currentElement release];
-	//[parser release];
     [super dealloc];
 }
 
 -(void)xmlParser{
-	NSURL *url = [NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/candidates.xml"];
-	parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/candidates.xml"]];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
 	[parser setShouldReportNamespacePrefixes:NO];
@@ -91,7 +89,8 @@
 	[[candidates objectAtIndex:0] removeAllObjects];
 	[[candidates objectAtIndex:1] removeAllObjects];
 	[parser parse];
-	[url release];
+	[table reloadData];
+	[parser release];
 }
 
 - (void)locationUpdate:(CLLocation *)location {
@@ -99,19 +98,24 @@
 	[self setCurrentLatitude:[NSString stringWithFormat:@"%lf",location.coordinate.latitude]];
 	[self setCurrentLongitude:[NSString stringWithFormat:@"%lf",location.coordinate.longitude]];
 	[self xmlParser];
-	[table reloadData];
 	[activityIndicator stopAnimating];
 }
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+	[currentElement release];
 	currentElement = [elementName copy];
 	
 	if ([elementName isEqualToString:@"user"]) {
+		[name release];
 		name = [[NSMutableString alloc] init];
+		[candidateId release];
 		candidateId = [[NSMutableString alloc] init];
+		[latitude release];
 		latitude = [[NSMutableString alloc] init];
+		[longitude release];
 		longitude = [[NSMutableString alloc] init];
 	}
+	//[currentElement autorelease];
 }
 
 - (float)findDistance:(float)latitudeCurrent :(float)longitudeCurrent :(float)latitudeCandidate :(float)longitudeCandidate{

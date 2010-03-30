@@ -80,15 +80,13 @@
 	[candidateId release];
 	[candidateResponse release];
 	[currentElement release];
-	//[parser release];
 	[candidateSelection release];
 	[candidateName release];
     [super dealloc];
 }
 
 -(void)xmlParser{
-	NSURL *url = [NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/phoneList.xml"];
-	parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	NSXMLParser *parser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://10.101.3.65/~ThoughtWorks/phoneList.xml"]];
 	[parser setDelegate:self];
 	[parser setShouldProcessNamespaces:NO];
 	[parser setShouldReportNamespacePrefixes:NO];
@@ -97,18 +95,24 @@
 	[[supporters objectAtIndex:1] removeAllObjects];
 	[[supporters objectAtIndex:2] removeAllObjects];
 	[parser parse];
-	[url release];
+	[parser release];
 }
 
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict{
+	[currentElement release];
 	currentElement = [elementName copy];
 	
 	if ([elementName isEqualToString:@"user"]) {
+		[name release];
 		name = [[NSMutableString alloc] init];
+		[phone release];
 		phone = [[NSMutableString alloc] init];
+		[supporterId release];
 		supporterId = [[NSMutableString alloc] init];
+		[candidateId release];
 		candidateId = [[NSMutableString alloc] init];
+		[candidateResponse release];
 		candidateResponse = [[NSMutableString alloc] init];
 	}
 }

@@ -19,7 +19,6 @@
 	NSMutableString *candidateId;
 	NSMutableString *candidateResponse;
 	NSString *currentElement;
-	NSXMLParser *parser;
 	NSString *candidateSelection;
 	NSString *candidateName;
 }
